@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Syne+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+#cordel {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    color: inherit;
+  
+}
+h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+   
+   
+}
+.por {
+    text-align: center;
+}
