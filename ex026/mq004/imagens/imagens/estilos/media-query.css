@@ -2,6 +2,86 @@
 
 /*Todas as demais midias*/
 
+/*Typical Device Breakpoints
+-----------------------------
+
+Pequenas telas: ate 600px
+Celukar: -  320px ate 480px
+Tablet: -  481px ate 768px
+Desktop: - 1025px ate 1200px
+Grandes telas: acima de 1201px
+*/
+
 @media print {
+    /*Impressao*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+body {
+    background-image: url(../back-print.jpg); /*desnecessario*/
     
+}
+main {
+    border: 2px solid black;
+    width: 90%;
+}
+main::after {
+    content: 'Vai tomar cu piranhaaa, hey! hey!';
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+}
+main h1 {
+    text-shadow: none;
+    color: black
+}
+#phone {display: none;}
+#tablet {display: none;}
+#print {display: block;}
+#pc {display: none;}
+#tv {display: none;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    /*Tablet*/
+    body {
+        background-image: url(../back-tablet.jpg);
+        
+    }
+    #phone {display: none;}
+#tablet {display: block;}
+#print {display: none;}
+#pc {display: none;}
+#tv {display: none;}
+}
+
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+    /*Desktop*/
+body {
+    background-image: url(../back-pc.jpg);
+}
+#phone {display: none;}
+#tablet {display: none;}
+#print {display: none;}
+#pc {display: block;}
+#tv {display: none;}
+}
+
+@media screen and (min-width: 1201px) {
+    /*Grandes Telas*/
+body {
+    background-image: url(../back-tv.jpg);
+    
+    
+    
+}
+main {
+    width: 700px;
+}
+#phone {display: none;}
+#tablet {display: none;}
+#print {display: none;}
+#pc {display: none;}
+#tv {display: block;}
 }
